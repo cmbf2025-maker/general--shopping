@@ -1,4 +1,7 @@
 let ads_button = document.querySelector("div.b-advert-contact-buttons");
 ads_button.addEventListener("click", function(){
-  alert("clicked");
+
+let priceEl= document.querySelector("span.qa-advert-price-view-value");
+let price = priceEl.getAttribute("content");
+  location.href = `https://v0-scriptbank.vercel.app/buyProduct?price=${price}`
 });
