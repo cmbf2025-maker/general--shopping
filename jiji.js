@@ -1,3 +1,3 @@
-//base jiji to scriptbank scripts
+alert("im in");//base jiji to scriptbank scripts
 
 
