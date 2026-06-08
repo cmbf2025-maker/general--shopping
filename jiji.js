@@ -42,5 +42,12 @@ if(ads && ads.style.display != "none" ){
   ads.style.display = "none";
 }
 
+/*
+let back = document.querySelector("div.qa-header-back-button");
+
+if(back && back.style.display != "none" ){
+  back.style.display = "none";
+}
+*/
 }, 1000);
 
