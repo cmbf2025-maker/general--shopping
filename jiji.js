@@ -35,5 +35,12 @@ mobile && mobile.style.display != "none" ){
   mobile.style.display = "none";
 }
 
+
+let ads = document.querySelector("div.qa-show-adsense");
+
+ads && ads.style.display != "none" ){
+  ads.style.display = "none";
+}
+
 }, 1000);
 
