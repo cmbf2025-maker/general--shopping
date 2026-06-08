@@ -42,6 +42,13 @@ if(mobile && mobile.style.display != "none" ){
 }
 
 
+let seller_back = document.querySelector("div.b-seller-page-header__back");
+
+if(seller_back && seller_back.style.display != "none" ){
+  seller_back.style.display = "none";
+}
+  
+
 let ads = document.querySelector("div.qa-show-adsense");
 
 if(ads && ads.style.display != "none" ){
