@@ -24,7 +24,7 @@ let price = priceEl.getAttribute("content");
 
 let similar = document.querySelector("div.h-dflex.h-pb-20.h-flex-dir-column");
 
-if(similar. && similar.style.display != "none" ){
+if(similar && similar.style.display != "none" ){
   similar.style.display = "none";
 }
 
