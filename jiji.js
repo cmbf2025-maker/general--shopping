@@ -7,7 +7,8 @@ let price = priceEl.getAttribute("content");
   let imageEl = document.querySelector("img.b-slider-image");
   let image = imageEl.src;
   let biz_name = typeof BIZ_NAME == "undefined" ? "": BIZ_NAME;
-  location.href = `https://v0-scriptbank.vercel.app/buyProduct?price=${price}&name=${name}&site=jiji.ng&currency=NGN&biz_name=${biz_name}&image=${image}`
+  let product_url = location.href;
+  location.href = `https://v0-scriptbank.vercel.app/buyProduct?price=${price}&name=${name}&site=jiji.ng&currency=NGN&biz_name=${biz_name}&product_url=${product_url}&image=${image}`
   
 }
 setInterval(function(){
