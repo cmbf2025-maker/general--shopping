@@ -28,5 +28,12 @@ if(similar && similar.style.display != "none" ){
   similar.style.display = "none";
 }
 
+  
+let mobile = document.querySelector("div.active.b-mobile-bar.b-mobile-bar-new");
+
+mobile && mobile.style.display != "none" ){
+  mobile.style.display = "none";
+}
+
 }, 1000);
 
