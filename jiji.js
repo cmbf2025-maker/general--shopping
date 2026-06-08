@@ -31,14 +31,14 @@ if(similar && similar.style.display != "none" ){
   
 let mobile = document.querySelector("div.active.b-mobile-bar.b-mobile-bar-new");
 
-mobile && mobile.style.display != "none" ){
+if(mobile && mobile.style.display != "none" ){
   mobile.style.display = "none";
 }
 
 
 let ads = document.querySelector("div.qa-show-adsense");
 
-ads && ads.style.display != "none" ){
+if(ads && ads.style.display != "none" ){
   ads.style.display = "none";
 }
 
