@@ -28,6 +28,19 @@ ads_button2.addEventListener("click", function(){
 });
 }
 
+let share_button = document.querySelector("svg.qa-share-button");
+
+if( share_button && ! share_button.getAttribute("shared")){
+let share = share_button.cloneNode(true);
+  share.addEventListener("click", function(){
+    //add html to enhance share
+    alert("working");
+  });
+  share.setAttribute("shared", "true");
+share_button.parentElement.insertBefore(share, share_button);
+  share_button.remove();
+}
+
 let similar = document.querySelector("div.h-dflex.h-pb-20.h-flex-dir-column");
 
 if(similar && similar.style.display != "none" ){
