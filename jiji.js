@@ -39,7 +39,8 @@ let share = share_button.cloneNode(true);
     if(! installed_share ){
       let style = document.createElement("style");
       style.setAttribute("id", "shared_item");
-      style.textContent = `demo-btn {
+      style.textContent = `
+      .demo-btn {
     background: #4285F4;
     color: white;
     border: none;
@@ -252,8 +253,8 @@ let share = share_button.cloneNode(true);
   back_drop.setAttribute("class", "share-backdrop");
   back_drop.setAttribute("id", "backdrop");
 
-      let share_sheet = 
-        share_sheet.setAttribute("class", "share-sheet");
+      let share_sheet = document.createElement("div");   
+      share_sheet.setAttribute("class", "share-sheet");
       share_sheet.setAttribute("id", "sheet");
       let share_html = `
 <!-- Sheet -->
