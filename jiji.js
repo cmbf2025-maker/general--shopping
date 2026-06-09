@@ -376,7 +376,7 @@ let share = share_button.cloneNode(true);
       
 
     back_drop.classList.add('open');
-    requestAnimationFrame(() => sheet.classList.add('open'));
+    requestAnimationFrame(() => share_sheet.classList.add('open'));
 
   const shareUrls = {
     'WhatsApp':  () => `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`,
