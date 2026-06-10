@@ -363,7 +363,7 @@ document.head.appendChild( style );
       share_sheet.innerHTML = share_html;
       //<!-- Toast -->
 //<div class="toast" id="toast"></div>`
-      /*
+      
       let toast = document.createElement("div");
       toast.setAttribute("class", "toast");
       toast.setAttribute("id", "toast");
@@ -376,7 +376,7 @@ document.head.appendChild( style );
   const url      = typeof APP_URL == "undefined" ? 'https://example.com/awesome-page':APP_URL;
   const text     = typeof SHARE_TEXT == "undefined" ? 'Register to buy products from this app and get up to N500k welcome bonus' : SHARE_TEXT;
       
-
+/*
     back_drop.classList.add('open');
     requestAnimationFrame(() => share_sheet.classList.add('open'));
 
