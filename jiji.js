@@ -376,10 +376,10 @@ document.head.appendChild( style );
   const url      = typeof APP_URL == "undefined" ? 'https://example.com/awesome-page':APP_URL;
   const text     = typeof SHARE_TEXT == "undefined" ? 'Register to buy products from this app and get up to N500k welcome bonus' : SHARE_TEXT;
       
-/*
+
     back_drop.classList.add('open');
     requestAnimationFrame(() => share_sheet.classList.add('open'));
-
+/*
   const shareUrls = {
     'WhatsApp':  () => `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`,
     'X (Twitter)': () => `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
