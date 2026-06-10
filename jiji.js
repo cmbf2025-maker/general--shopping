@@ -500,7 +500,7 @@ document.head.appendChild( style );
     } catch(e){
       console.log("error check: ", e );
     }
-      /*
+      
       
       document.body.appendChild(back_drop);
       document.body.appendChild( share_sheet);
@@ -514,8 +514,8 @@ document.head.appendChild( style );
   sheet.addEventListener('touchend', e => {
     if (e.changedTouches[0].clientY - startY > 80) closeShare();
   });
-    */
-    alert("checks done v10");
+    
+    alert("checks done v11");
   });
   share.setAttribute("shared", "true");
 share_button.parentElement.insertBefore(share, share_button);
