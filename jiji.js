@@ -248,7 +248,7 @@ let share = share_button.cloneNode(true);
   `;
 document.head.appendChild( style );
     }
-    /*
+    
   //      <!-- Backdrop -->
 //<div class="share-backdrop" id="backdrop" onclick="closeShare()"></div>
   let back_drop = document.createElement("div");
@@ -363,7 +363,7 @@ document.head.appendChild( style );
       share_sheet.innerHTML = share_html;
       //<!-- Toast -->
 //<div class="toast" id="toast"></div>`
-      
+      /*
       let toast = document.createElement("div");
       toast.setAttribute("class", "toast");
       toast.setAttribute("id", "toast");
