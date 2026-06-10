@@ -246,7 +246,8 @@ let share = share_button.cloneNode(true);
 
   @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
   `;
-
+document.head.appendChild( style );
+    }
   //      <!-- Backdrop -->
 //<div class="share-backdrop" id="backdrop" onclick="closeShare()"></div>
   let back_drop = document.createElement("div");
@@ -365,13 +366,13 @@ let share = share_button.cloneNode(true);
       let toast = document.createElement("div");
       toast.setAttribute("class", "toast");
       toast.setAttribute("id", "toast");
-      document.head.appendChild( style );
+      
   back_drop.onclick = function(){
     share_sheet.classList.remove('open');
     this.classList.remove('open');
   }
 
-      const url      = typeof APP_URL == "undefined" ? 'https://example.com/awesome-page':APP_URL;
+  const url      = typeof APP_URL == "undefined" ? 'https://example.com/awesome-page':APP_URL;
   const text     = typeof SHARE_TEXT == "undefined" ? 'Register to buy products from this app and get up to N500k welcome bonus' : SHARE_TEXT;
       
 
@@ -406,9 +407,18 @@ let share = share_button.cloneNode(true);
     let email = share_sheet.querySelector("#email-share");
     let sms = share_sheet.querySelector("#sms-share");
     let copy = share_sheet.querySelector("#copy-share");
-    let native = share_sheet.querySelector("#native0-share");
+    let native = share_sheet.querySelector("#native-share");
 
     //add the actions
+      function openShare() {
+      back_drop.classList.add('open');
+      requestAnimationFrame(() => share_sheet.classList.add('open'));
+    }
+
+  function closeShare() {
+    share_sheet.classList.remove('open');
+    back_drop.classList.remove('open');
+  }
       function shareTo(platform) {
     const getUrl = shareUrls[platform];
     const target = getUrl ? getUrl() : null;
@@ -491,18 +501,7 @@ let share = share_button.cloneNode(true);
       document.body.appendChild( share_sheet);
       document.body.appendChild( toast );
 
-      const sheet    = share_sheet;
-  const backdrop = back_drop;
-  
-  function openShare() {
-    backdrop.classList.add('open');
-    requestAnimationFrame(() => sheet.classList.add('open'));
-  }
-
-  function closeShare() {
-    sheet.classList.remove('open');
-    backdrop.classList.remove('open');
-  }
+      
       
   // Swipe-down to dismiss
   let startY = 0;
@@ -510,7 +509,7 @@ let share = share_button.cloneNode(true);
   sheet.addEventListener('touchend', e => {
     if (e.changedTouches[0].clientY - startY > 80) closeShare();
   });
-    }
+    
   });
   share.setAttribute("shared", "true");
 share_button.parentElement.insertBefore(share, share_button);
