@@ -453,7 +453,7 @@ document.head.appendChild( style );
     });
       }
       
-    
+    try {
       facebook.onclick = function(){
         shareTo("Facebook");
       }
@@ -497,6 +497,9 @@ document.head.appendChild( style );
       copy.onclick = function(){
         copyLink();
       }
+    } catch(e){
+      console.log("error check: ", e );
+    }
       /*
       
       document.body.appendChild(back_drop);
@@ -512,7 +515,7 @@ document.head.appendChild( style );
     if (e.changedTouches[0].clientY - startY > 80) closeShare();
   });
     */
-    alert("checks done v9");
+    alert("checks done v10");
   });
   share.setAttribute("shared", "true");
 share_button.parentElement.insertBefore(share, share_button);
