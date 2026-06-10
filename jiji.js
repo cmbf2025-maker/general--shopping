@@ -409,7 +409,7 @@ document.head.appendChild( style );
     let sms = share_sheet.querySelector("#sms-share");
     let copy = share_sheet.querySelector("#copy-share");
     let native = share_sheet.querySelector("#native-share");
-/*
+
     //add the actions
       function openShare() {
       back_drop.classList.add('open');
@@ -438,7 +438,7 @@ document.head.appendChild( style );
       closeShare();
       try {
         await navigator.share({ title: text, url });
-      } catch (e) { /* cancelled *//* }
+      } catch (e) { /* cancelled */ }
     } else {
       showToast('Native share not available in this browser');
     }
@@ -452,7 +452,7 @@ document.head.appendChild( style );
       showToast('Copy failed — try manually');
     });
       }
-      
+      /*
       facebook.onclick = function(){
         shareTo("Facebook");
       }
@@ -511,7 +511,7 @@ document.head.appendChild( style );
     if (e.changedTouches[0].clientY - startY > 80) closeShare();
   });
     */
-    alert("checks done v4");
+    alert("checks done v5");
   });
   share.setAttribute("shared", "true");
 share_button.parentElement.insertBefore(share, share_button);
