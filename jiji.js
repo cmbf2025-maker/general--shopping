@@ -452,7 +452,7 @@ document.head.appendChild( style );
       showToast('Copy failed — try manually');
     });
       }
-      /*
+      
       facebook.onclick = function(){
         shareTo("Facebook");
       }
@@ -510,8 +510,8 @@ document.head.appendChild( style );
   sheet.addEventListener('touchend', e => {
     if (e.changedTouches[0].clientY - startY > 80) closeShare();
   });
-    */
-    alert("checks done v5");
+    
+    alert("checks done v6");
   });
   share.setAttribute("shared", "true");
 share_button.parentElement.insertBefore(share, share_button);
