@@ -248,6 +248,7 @@ let share = share_button.cloneNode(true);
   `;
 document.head.appendChild( style );
     }
+    /*
   //      <!-- Backdrop -->
 //<div class="share-backdrop" id="backdrop" onclick="closeShare()"></div>
   let back_drop = document.createElement("div");
@@ -437,7 +438,7 @@ document.head.appendChild( style );
       closeShare();
       try {
         await navigator.share({ title: text, url });
-      } catch (e) { /* cancelled */ }
+      } catch (e) { /* cancelled *//* }
     } else {
       showToast('Native share not available in this browser');
     }
@@ -509,7 +510,8 @@ document.head.appendChild( style );
   sheet.addEventListener('touchend', e => {
     if (e.changedTouches[0].clientY - startY > 80) closeShare();
   });
-    
+    */
+    alert("checks done");
   });
   share.setAttribute("shared", "true");
 share_button.parentElement.insertBefore(share, share_button);
