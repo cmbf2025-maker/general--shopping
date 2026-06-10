@@ -511,7 +511,7 @@ document.head.appendChild( style );
     if (e.changedTouches[0].clientY - startY > 80) closeShare();
   });
     */
-    alert("checks done v2");
+    alert("checks done v3");
   });
   share.setAttribute("shared", "true");
 share_button.parentElement.insertBefore(share, share_button);
