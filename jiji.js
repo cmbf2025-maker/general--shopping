@@ -379,7 +379,7 @@ document.head.appendChild( style );
 
     back_drop.classList.add('open');
     requestAnimationFrame(() => share_sheet.classList.add('open'));
-/*
+
   const shareUrls = {
     'WhatsApp':  () => `https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`,
     'X (Twitter)': () => `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
@@ -409,7 +409,7 @@ document.head.appendChild( style );
     let sms = share_sheet.querySelector("#sms-share");
     let copy = share_sheet.querySelector("#copy-share");
     let native = share_sheet.querySelector("#native-share");
-
+/*
     //add the actions
       function openShare() {
       back_drop.classList.add('open');
